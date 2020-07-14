@@ -1,0 +1,10 @@
+<h1>your sentence has {{count}} words</h1>
+<a href="{% url 'home' %}">go back</a>
+<h1>your sentence is:</h1>
+{{fulltext}}
+<h1>word count:</h1>
+<h1>{% for word, totalcount in sortedwords %}
+{{word}}-{{totalcount}}
+<br />
+
+    {% endfor %}</h1>
